@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Without Angular with JQuery Demo-Powered by TKHTS.COM</title>
+    <script type="text/javascript" src="../lib/angular/angular.min.js"></script>
+
+    <script type="text/javascript">
+
+
+     var app = angular.module('myApp', []);
+
+        app.run(function ($rootScope) {
+            $rootScope.name = "Techknow Heights";
+            $rootScope.profession = "Consultant & CT";
+            $rootScope.data = {message:'Some message', x:'Some X Value' }
+            console.log($rootScope);
+        });
+
+
+    </script>
+
+
+</head>
+<body>
+<!--<body ng-app="myApp">-->
+
+
+<h1>Name: {{name}}</h1>
+<h1>Profession: {{profession}}</h1>
+<h1>Data: {{data.message}}</h1>
+<!--
+
+<div ng-app="myApp">
+    <h1>Name: {{name}}</h1>
+    <h1>Profession: {{profession}}</h1>
+    <h1>Data: {{data.message}}</h1>
+
+</div>
+-->
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+
+<title>Controller Basics Demo-Powered by TKHTS.COM</title>
+<script type="text/javascript" src="../lib/angular/angular.min.js"></script>
+
+<script type="text/javascript">
+
+/// function myController $scope.data
+
+    function test($scope){
+        $scope.data1 = "Data1 Value",
+        $scope.data2 = {message:'My Val'},
+        $scope.data3 = 123
+        console.log($scope);
+    }
+    function test2($scope){
+        $scope.data1="Another data Value";
+        $scope.data2 = {message:'My Valye222'};
+                $scope.data3 = 54545;
+    }
+
+
+
+</script>
+</head>
+<body>
+
+<div ng-controller="test" >
+
+    {{data1}} <br>
+    {{data2.message}} <br>
+    {{data3}}
+</div>
+<div ng-controller="test2" >
+
+    {{data1}} <br>
+    {{data2.message}} <br>
+    {{data3}}
+</div>
+
+
+
+</body>
+</html>
